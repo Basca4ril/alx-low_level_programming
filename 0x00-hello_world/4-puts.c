@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//Function prints a statement then returns 0
+/*Function prints a statement then returns 0*/
 
 int main(void)
 {
