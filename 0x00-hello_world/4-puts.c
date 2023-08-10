@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /*
- * Function prints a statement then returns 0
- * */
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
