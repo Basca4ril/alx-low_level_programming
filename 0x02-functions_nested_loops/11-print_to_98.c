@@ -39,7 +39,7 @@ void print_to_98(int n)
 		}
 		else
 		{
-			n++
+			n++;
 		}
 	}
 	print_number1(98);
