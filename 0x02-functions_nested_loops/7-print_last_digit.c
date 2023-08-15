@@ -4,11 +4,11 @@
 /**
  * print_last_digit - Prints last digit of a number
  *
- * @n: Parameter for print_last_digit function
+ * @num: Parameter for print_last_digit function
  * Return: Integer last number
  */
 
-int print_last_digit(int n)
+int print_last_digit(int num)
 {
 	if (num < 0)
 	{
