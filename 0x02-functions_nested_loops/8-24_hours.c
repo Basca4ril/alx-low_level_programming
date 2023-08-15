@@ -3,6 +3,9 @@
 
 /**
  * print_time - Prints time
+ *
+ * @hour: hour
+ * @min: minute
  */
 
 void print_time(int hour, int min)
