@@ -13,11 +13,11 @@ int main(void)
 	int fnxt;
 	int i;
 
-	printf("%d, %d", fb1, fb2);
+	printf("%d, %d, ", fb1, fb2);
 
 	for (i = 3; i <= 50; i++)
 	{
-		fnxt = fb1 +fb2;
+		fnxt = fb1 + fb2;
 		if (i < 50)
 		{
 			printf("%d, ", fnxt);
