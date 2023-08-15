@@ -11,15 +11,3 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-/**
- * print_alphabet - Prints lower case alphabets
- */
-
-void print_alphabet(void)
-{
-	char alpha;
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
-		putchar(alpha);
-	putchar('\n');
-}
