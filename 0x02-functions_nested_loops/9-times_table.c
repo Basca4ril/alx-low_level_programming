@@ -22,7 +22,7 @@ void print_number(int number)
 }
 
 /**
- * times_tables - Prints table
+ * times_table - Prints table
  */
 
 void times_table(void)
