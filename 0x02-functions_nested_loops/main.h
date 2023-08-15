@@ -11,5 +11,7 @@ int _abs(int n);
 int print_last_digit(int n);
 void print_time(int hour, int min);
 void jack_bauer(void);
+void print_number(int number);
+void times_table(void);
 
 #endif /* MAIN_H */
