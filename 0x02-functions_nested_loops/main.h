@@ -14,5 +14,7 @@ void jack_bauer(void);
 void print_number(int number);
 void times_table(void);
 int add(int n, int m);
+void print_number1(int num);
+void print_to_98(int n);
 
 #endif /* MAIN_H */
