@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_number - prints number in correct format
+ * print_number1 - prints number in correct format
  *
  * @num: number
  */
