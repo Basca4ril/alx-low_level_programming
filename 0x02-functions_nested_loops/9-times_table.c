@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * print_number - Prints and formats number
+ *
+ * @number: Parameter for print number function
+ */
+
 void print_number(int number)
 {
 	if (number < 10)
@@ -15,6 +21,10 @@ void print_number(int number)
 	}
 }
 
+/**
+ * times_tables - Prints table
+ */
+
 void times_table(void)
 {
 	int i;
@@ -25,12 +35,13 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			int result = i * j;
+
 			print_number(result);
 			if (j < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if(result < 10)
+				if (result < 10)
 				{
 					_putchar(' ');
 				}
