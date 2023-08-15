@@ -17,7 +17,7 @@ int print_last_digit(int num)
 
 	if (num < 10)
 	{
-		return num;
+		return (num);
 	}
-	return print_last_digit(num / 10);
+	return (print_last_digit(num / 10));
 }
