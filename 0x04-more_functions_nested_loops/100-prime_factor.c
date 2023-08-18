@@ -45,7 +45,7 @@ unsigned long largest_prime_factor(unsigned long num)
 	{
 		while (num % i == 0)
 		{
-			larget = i;
+			largest = i;
 			num /= i;
 		}
 	}
