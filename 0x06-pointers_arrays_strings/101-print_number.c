@@ -8,14 +8,16 @@
 
 void print_number(int n)
 {
+	int div = 1;
+	int temp;
+
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
 
-	int div = 1;
-	int temp = n;
+	temp = n;
 
 	while (temp > 9)
 	{
