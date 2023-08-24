@@ -37,7 +37,7 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (is_seperators(str[i]))
+		if (is_seperator(str[i]))
 		{
 			new_word = true;
 		}
