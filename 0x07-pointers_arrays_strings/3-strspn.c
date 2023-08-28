@@ -1,10 +1,11 @@
 #include "main"
+#include <stddef.h>
 #include <stdio.h>
 
 /**
- * _strspn - gets length 
+ * _strspn - gets length
  * @s: string to search
- * @accept - pointer for characters
+ * @accept: pointer for characters
  * Return: length
  */
 
