@@ -4,10 +4,10 @@
 int main(void)
 {
 	char *s = "hello, world";
-	char *f = "oleh";
-	unsigned int n;
+	char *f = "world";
+	char *n;
 
-	n = _strspn(s, f);
-	printf("%u\n", n);
+	n = _strstr(s, f);
+	printf("%s\n", n);
 	return (0);
 }
