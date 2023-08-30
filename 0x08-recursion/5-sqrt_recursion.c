@@ -15,7 +15,7 @@ int rsquare(int n, int st, int end)
 	{
 		return (-1);
 	}
-	mid = start + (end - start) / 2;
+	mid = st + (end - st) / 2;
 	midS = mid * mid;
 	if (midS == n)
 		return (mid);
