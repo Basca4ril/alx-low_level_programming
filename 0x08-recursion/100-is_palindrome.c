@@ -26,7 +26,7 @@ int is_pal(char *s, int st, int end)
  */
 int is_palindrome(char *s)
 {
-	int len = _strlen_recursion(s);
+	int len = strlen(s);
 
 	return (is_pal(s, 0, len - 1));
 }
