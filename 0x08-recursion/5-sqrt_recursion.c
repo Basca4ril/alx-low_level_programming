@@ -11,19 +11,20 @@ int rsquare(int n, int st, int end)
 {
 	int mid, midS;
 
-	if (start > end)
+	if (st > end)
 	{
 		return (-1);
 	}
 	mid = start + (end - start) / 2;
 	midS = mid * mid;
 	if (midS == n)
-		retrun mid;
+		return (mid);
 	else if (midS < n)
 		return (rsquare(n, mid + 1, end));
 	else
 		return (rsquare(n, st, mid - 1));
 }
+
 /**
  * _sqrt_recursion - find square root
  * @n: number
