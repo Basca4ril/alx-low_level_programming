@@ -20,7 +20,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	strcpy(dup, str);
-	free();
+	free(dup);
 
 	return (dup);
 }
