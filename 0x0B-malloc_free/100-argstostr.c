@@ -12,14 +12,14 @@
 char *argstostr(int ac, char **av)
 {
 	int i1, i, tlen = 0, ind = 0;
+	char *res;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
 		tlen += strlen(av[i]) + 1;
-
-	char *res = (char *)malloc(sizeof(char) * (tlen + 1));
+	res = (char *)malloc(sizeof(char) * (tlen + 1));
 
 	if (res == NULL)
 		return (NULL);
