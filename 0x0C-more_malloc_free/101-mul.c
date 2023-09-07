@@ -25,7 +25,7 @@ bool valdigit(char *str)
  * @num2: second string
  * Return: Multiplication of two numbers
  */
-long long multiply(char *num1, char *num2)
+long multiply(char *num1, char *num2)
 {
 	return (atoll(num1) * atoll(num2));
 }
@@ -38,7 +38,7 @@ long long multiply(char *num1, char *num2)
  */
 int main(int argc, char *argv[])
 {
-	long long res;
+	long res;
 
 	if (argc != 3)
 	{
@@ -53,5 +53,7 @@ int main(int argc, char *argv[])
 	}
 
 	res = multiply(argv[1], argv[2]);
-	printf("%lld\n", res);
+	printf("%ld\n", res);
+
+	return 0;
 }
