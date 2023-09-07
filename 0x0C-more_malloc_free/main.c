@@ -11,7 +11,8 @@ int main(void)
 {
 	char *concat;
 
-	concat = array_range(0, 10);
+	concat = malloc(sizeof(char) * 10);
+	concat = _realloc(concat, sizeof(char) * 10, sizeof()char) * 98);
 	printf("%s\n", concat);
 	free(concat);
 	return (0);
