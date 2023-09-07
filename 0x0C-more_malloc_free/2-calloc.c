@@ -10,12 +10,15 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	size_t tsize;
+	void *ptr;
+
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	size_t tsize = (size_t)nmemb * size;
+	tsize = (size_t)nmemb * size;
 
-	void *ptr = malloc(tsize);
+	ptr = malloc(tsize);
 
 	if (ptr == NULL)
 		return (NULL);
