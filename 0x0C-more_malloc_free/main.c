@@ -11,7 +11,7 @@ int main(void)
 {
 	char *concat;
 
-	concat =_calloc(98, sizeof(char));
+	concat = array_range(0, 10);
 	printf("%s\n", concat);
 	free(concat);
 	return (0);
