@@ -16,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		int n = va_args(args, int);
+		int n = va_arg(args, int);
 		int temp = n;
 		int div = 1;
 
@@ -33,7 +33,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			div /= 10;
 		}
 
-		if (separator != NULL && i < n - 1)
+		if (separator != NULL && i < (unsigned int)(n - 1))
 		{
 			const char *s;
 
