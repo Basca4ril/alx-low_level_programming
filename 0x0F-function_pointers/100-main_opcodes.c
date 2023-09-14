@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	numb = atoi(argv[i]);
+	numb = atoi(argv[1]);
 
 	if (numb < 0)
 	{
