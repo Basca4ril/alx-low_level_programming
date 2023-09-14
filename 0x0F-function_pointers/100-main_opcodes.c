@@ -4,7 +4,6 @@
 
 /**
  * print_opcodes - prints opcodes
- * @st: start
  * @numb: number if bytes
  */
 void print_opcodes(int numb)
