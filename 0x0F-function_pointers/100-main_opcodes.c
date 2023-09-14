@@ -7,17 +7,18 @@
  * @st: start
  * @numb: number if bytes
  */
-void print_opcodes(char *st, int numb)
+void print_opcodes(int numb)
 {
 	int i;
+	unsigned char *ptr = (unsigned char *)print_opcodes;
 
 	for (i = 0; i < numb; i++)
 	{
-		printf("%02hhx", st[i]);
+		printf("%02x", ptr[i]);
 		if (i < numb - 1)
 			printf(" ");
 	}
-	printf(" ");
+	printf("\n");
 }
 
 /**
@@ -29,7 +30,6 @@ void print_opcodes(char *st, int numb)
 int main(int argc, char *argv[])
 {
 	int numb;
-	char *addr;
 
 	if (argc != 2)
 	{
@@ -45,9 +45,7 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 
-	addr = (char *)main;
-
-	print_opcodes(addr, numb);
+	print_opcodes(numb);
 
 	return (0);
 }
