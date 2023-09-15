@@ -7,33 +7,28 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	char *separator = "";
-	int i = 0;
+	const char *form;
 
 	va_start(args, format);
-	while (format && format[i])
+	for (form = format; *form; form++)
 	{
-		if (format[i] == 'c'){
-			char ch = va_arg(args, int);
-
-			printf("%s%c", separator, ch); }
-
-		else if (format[i] == 'i'){
-			int n = va_arg(args, int);
-
-			printf("%s%d", separator, n); }
-		else if (format[i] == 'f'){
-			double val = va_arg(args, double);
-
-			printf("%s%f", separator, val); }
-		else if (format[i] == 's'){		{
+		if (*form == 'c')
+			printf("%s%c", separator, va_arg(args, int));
+		else if (*form == 'i')
+			printf("%s%d", separator, va_arg(args, int));
+		else if (*form == 'f')
+			printf("%s%f", separator, va_arg(args, double));
+		else if (*form == 's')
+		{
 			char *st = va_arg(args, char *);
 
 			if (st == NULL)
 				printf("%s(nil)", separator);
 			else
-				printf("%s%s", separator, st); }
+				printf("%s%s", separator, st);
+		}
 		separator = ", ";
-		i++; }
-	va_end(args);
-	printf("\n");}
 	}
+	va_end(args);
+	printf("\n");
+}
