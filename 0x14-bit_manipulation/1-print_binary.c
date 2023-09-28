@@ -24,7 +24,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 	else
 	{
-	i	int b = sizeof(n) * 8;
+		int b = sizeof(n) * 8;
 
 		printer(n, b);
 	}
