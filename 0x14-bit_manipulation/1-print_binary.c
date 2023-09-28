@@ -10,7 +10,7 @@ void printer(unsigned long int num, int bit)
 	if (bit > 0)
 	{
 		printer(num >> 1, bit - 1);
-		_putchar((n & 1) ? '1' : '0');
+		_putchar((num & 1) ? '1' : '0');
 	}
 }
 
