@@ -1,4 +1,4 @@
-#include "lsits.h"
+#include "lists.h"
 
 /**
  * sum_dlistint - finds sum of doubly linked list
