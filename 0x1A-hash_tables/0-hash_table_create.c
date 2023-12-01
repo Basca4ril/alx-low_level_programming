@@ -5,8 +5,10 @@
  * @size: size of array
  * Return: Pointer to has table
  */
-hash_table_t *hash_table_create(unsigned int size)
+hash_table_t *hash_table_create(unsigned long int size)
 {
+	unsigned long int i;
+
 	hash_table_t *hashtable = malloc(sizeof(hash_table_t));
 	if (hashtable == NULL)
 		return (NULL);
@@ -18,7 +20,7 @@ hash_table_t *hash_table_create(unsigned int size)
 		free(hashtable);
 		return (NULL);
 	}
-	for (unsigned long int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 		hashtable->array[i] = NULL;
 
 	return (hashtable);
